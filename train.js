@@ -8,4 +8,7 @@ var config = {
   };
 firebase.initializeApp(config);
 
-var trainList = [];
+$(".btn-submit").on("click", function(){
+  var trainName = $("#trainName").val();
+  console.log(trainName);
+});
