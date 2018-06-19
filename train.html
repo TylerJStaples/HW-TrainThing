@@ -1,9 +1,11 @@
 <html>
 <head>
+	<title>Train Thing</title>
 	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>		
+	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+	<script type="text/javascript" src="train.js"></script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -62,14 +64,14 @@
 						<label for="trainTime">
 							Next arrival
 						</label>
-						<input type="number" id="trainTime"/>
+						<input type="text" id="trainTime"/>
 					</div>
 					<div class="form-group">
 
 						<label for="freqTrain">
 							Frequency
 						</label>
-						<input type="number" id="freqTrain"/>
+						<input type="text" id="freqTrain"/>
 					</div>
 					<div class="form-group">
 						
@@ -78,10 +80,10 @@
 						</label>
 						<input type="text" id="trainDest"/>
 					</div>
-					<button type="submit" class="btn-submit">
-						Submit
-					</button>
 				</form>
+				<button id="submit" type="submit">
+					Submit
+				</button>
 			</div>
 		</div><!--row-->
 	</div> <!--Container-->
