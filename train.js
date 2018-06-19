@@ -67,7 +67,7 @@ data.ref().on("child_added", function(childSnapshot, prevChildKey){
 
   console.log("tMinutes:", tMinutes);
   console.log("tArrival:", tArrival);
-
+  
   $("#train-table > tbody").append("<tr><td>" + tName + "</td><td>" + tDestination + "</td><td>" + tFrequency + "</td><td>" + tArrival + "</td><td>" + tMinutes + "</td></tr>");
   });//end append
 
